@@ -16,6 +16,8 @@ use auto\ResetTask;
 
 class Main extends PluginBase implements Listener {
   
+  private $task1;
+  
   public function onEnable(): void{
     $this->getLogger()->info("Plugin Enable");
     $this->task1 = new ResetTask($this);
@@ -30,6 +32,5 @@ class Main extends PluginBase implements Listener {
     $this->getServer()->broadcastMessage("§l§a»» Toutes les mines ont été reset !!!");
     $this->getServer()->dispatchCommand(new ConsoleCommandSender(Server::getInstance(), new Language("eng")), 'minereset reset mine');
     $this->getServer()->dispatchCommand(new ConsoleCommandSender(Server::getInstance(), new Language("eng")), 'minereset reset minevip');  
-      
   }
 }
