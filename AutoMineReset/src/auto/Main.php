@@ -29,8 +29,8 @@ class Main extends PluginBase implements Listener {
   }
   
   public function resetmine() : void{
-    $this->getServer()->broadcastMessage("§l§a»» Toutes les mines ont été reset !!!");
-    $this->getServer()->dispatchCommand(new ConsoleCommandSender(Server::getInstance(), new Language("eng")), 'minereset reset mine');
-    $this->getServer()->dispatchCommand(new ConsoleCommandSender(Server::getInstance(), new Language("eng")), 'minereset reset minevip');  
+    $this->getServer()->broadcastMessage("§l§a»» Tempat Mining Akan Direset! Silahkan Keluar Dari Area Mining");
+    $this->getServer()->dispatchCommand(new ConsoleCommandSender(Server::getInstance(), new Language("eng")), 'minereset resetall');
+    $this->getServer()->dispatchCommand(new ConsoleCommandSender(Server::getInstance(), new Language("eng")), 'minereset resetall');  
   }
 }
